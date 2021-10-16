@@ -5,16 +5,14 @@ cmake_minimum_required(VERSION 3.9)
 project(sqrt2048)
 
 # Add your sources here (adding headers is optional, but helps some CMake generators)
-set(PROJECT_SOURCE sqrt2048.cpp sqrt2048.hpp)
+set(PROJECT_SOURCE
+    sqrt2048.cpp
+    sqrt2048.hpp
+    src/save.cpp
+)
 
 # ... and any other files you want in the release here
 set(PROJECT_DISTRIBS LICENSE README.md)
-
-# temporarily set paths until i figure out how you're supposed to do this in vscode
-# comment out before committing otherwise it'll definitely break github actions
-#set(32BLIT_DIR $ENV{HOME}/libs/c/32blit-sdk)
-#set(PICO_SDK_PATH $ENV{HOME}/libs/c/pico-sdk)
-#set(PICO_BOARD pimoroni_picosystem)
 
 # Build configuration; approach this with caution!
 if(MSVC)
