@@ -1,10 +1,10 @@
-title: game title
-description: game description
-author: you
+title: sqrt2048
+description: A port of 2048 for 32Blit and the PicoSystem
+author: Maff <@Maffsie>
 splash:
   file: assets/no-image.png
 icon:
   file: assets/no-icon.png
 version: v0.0.1
 category: game # game, demo, utility, ...
-url: https://github.com/32blit/32blit-boilerplate
+url: https://github.com/Maffsie/sqrt2048

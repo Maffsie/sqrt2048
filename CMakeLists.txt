@@ -10,6 +10,12 @@ set(PROJECT_SOURCE sqrt2048.cpp sqrt2048.hpp)
 # ... and any other files you want in the release here
 set(PROJECT_DISTRIBS LICENSE README.md)
 
+# temporarily set paths until i figure out how you're supposed to do this in vscode
+# comment out before committing otherwise it'll definitely break github actions
+#set(32BLIT_DIR $ENV{HOME}/libs/c/32blit-sdk)
+#set(PICO_SDK_PATH $ENV{HOME}/libs/c/pico-sdk)
+#set(PICO_BOARD pimoroni_picosystem)
+
 # Build configuration; approach this with caution!
 if(MSVC)
   add_compile_options("/W4" "/wd4244" "/wd4324" "/wd4458" "/wd4100")

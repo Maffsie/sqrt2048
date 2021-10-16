@@ -1,4 +1,4 @@
-#include "game.hpp"
+#include "sqrt2048.hpp"
 
 using namespace blit;
 
